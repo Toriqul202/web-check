@@ -6,6 +6,6 @@ This project was Made with [Simple Coding](https://karate-hero.netlify.app/).
 
 Html,Css,Js,React
 
-### `npm start`
+### `Website Concept`
 This is one kind of educational Website.There are 4 page every pages have differnt structure
 
