@@ -1,11 +1,11 @@
 
 
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 
 import './App.css';
@@ -14,30 +14,20 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 
 import Header from './components/Header/Header';
+import Navbars from "./components/Nav/Navbar";
 import Sampleabout from "./components/Sample-about/Sample-about";
 import Sampleservices from "./components/Sample-services/Sample-services";
 
+import Services from "./components/Services/Services";
+import NotFound from "./components/NotFound/NotFound";
+
 function App() {
-  const simpleStyle={
-    textAlign:'none'
-  }
+ 
   return (
     
      <Router>
-      
-     <div  style={simpleStyle}>
-     <nav className="nav">
-          
-          <Link to="/" className="link">Home</Link>
-        
-          <Link to="/about" className="link">About</Link>
-       
-          <Link to="/services" className="link">Services</Link>
-
-          <Link to="/contact" className="link">Contact</Link>
-       
-    </nav>
-     </div>
+       <Navbars></Navbars>
+    
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
@@ -46,6 +36,7 @@ function App() {
             <About></About>
           </Route>
           <Route path="/services">
+            <Services></Services>
              <Footer></Footer>
           </Route>
           <Route exact path="/">
@@ -56,6 +47,9 @@ function App() {
           </Route>
           <Route path="/contact">
            <Contact></Contact>
+          </Route>
+          <Route path="*">
+           <NotFound></NotFound>
           </Route>
         </Switch>
      

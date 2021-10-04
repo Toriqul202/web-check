@@ -1,11 +1,12 @@
-import React from 'react';
+
 import { Card, Col, Container, Row ,Button } from 'react-bootstrap';
 import './Sample-services.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Sampleservices = () => {
+ const Sampleservices= ()=>{
     return (
         <div>
-       <Container>
+         <Container>
          <Row className="g-2">
           <Col>  
            <Card className="p-2">
@@ -25,7 +26,7 @@ const Sampleservices = () => {
           <Card className="p-2">
             <Card.Img variant="top" src="https://html.modernwebtemplates.com/okorner/images/team/02.jpg" />
           <Card.Body className="text-center">
-          <Card.Title style={{fontSize:'15px'}}> Self Training</Card.Title>
+          <Card.Title style={{fontSize:'20px'}}> Self Training</Card.Title>
           <Card.Text className="text-center">
           Combining the experience of Shaolin masters, we give useful Shaolin practice tips to help improve your existing skills.
           </Card.Text>
