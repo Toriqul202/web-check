@@ -1,6 +1,26 @@
 .App {
   text-align: center;
 }
+.nav{
+  text-align: center;
+  background-color:#080B17;  
+  padding: 10px;
+}
+.link{
+  color: white;
+ margin: 10px 5px;
+ text-decoration: none;
+ font-size:12px;
+ padding: 5px;
+
+ transition-duration: 0.5s;
+}
+.link:hover{
+  background-color: red;
+  border-radius: 2px;
+}
+
+
 
 .App-logo {
   height: 40vmin;
