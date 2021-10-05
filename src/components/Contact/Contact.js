@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container,FormControl, InputGroup,Button } from 'react-bootstrap';
-import Footer from '../Footer/Footer';
+
 import './Contact.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -39,7 +39,7 @@ const Contact = () => {
   </InputGroup>
   <Button variant="warning mt-3">Submit</Button>
           </Container>
-         <Footer></Footer> 
+        
         </div>
     );
 };

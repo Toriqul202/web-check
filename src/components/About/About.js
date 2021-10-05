@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Container, Row ,Button } from 'react-bootstrap';
-import Footer from '../Footer/Footer';
+
 import './About.css'
 
 const About = () => {
@@ -26,7 +26,7 @@ const About = () => {
           </Row>
        </Container>
            </div>
-       <Footer></Footer>
+       
         </div>
     );
 };

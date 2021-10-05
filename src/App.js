@@ -37,13 +37,13 @@ function App() {
           </Route>
           <Route path="/services">
             <Services></Services>
-             <Footer></Footer>
+             
           </Route>
           <Route exact path="/">
             <Header></Header>
             <Sampleabout></Sampleabout>
             <Sampleservices></Sampleservices>
-            <Footer></Footer>
+            
           </Route>
           <Route path="/contact">
            <Contact></Contact>
@@ -52,6 +52,7 @@ function App() {
            <NotFound></NotFound>
           </Route>
         </Switch>
+        <Footer></Footer>
      
     </Router>
     
